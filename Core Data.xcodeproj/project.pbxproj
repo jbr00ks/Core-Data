@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		03ECCEC72370DCC100DE2379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCEC62370DCC100DE2379 /* AppDelegate.swift */; };
 		03ECCEC92370DCC100DE2379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCEC82370DCC100DE2379 /* SceneDelegate.swift */; };
-		03ECCECB2370DCC100DE2379 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCECA2370DCC100DE2379 /* ViewController.swift */; };
 		03ECCECE2370DCC100DE2379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03ECCECC2370DCC100DE2379 /* Main.storyboard */; };
 		03ECCED12370DCC100DE2379 /* Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCECF2370DCC100DE2379 /* Core_Data.xcdatamodeld */; };
 		03ECCED32370DCC400DE2379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03ECCED22370DCC400DE2379 /* Assets.xcassets */; };
 		03ECCED62370DCC400DE2379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03ECCED42370DCC400DE2379 /* LaunchScreen.storyboard */; };
 		03ECCEE12370DCC400DE2379 /* Core_DataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCEE02370DCC400DE2379 /* Core_DataUITests.swift */; };
+		03ECCEEC2370DD5A00DE2379 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCEEB2370DD5A00DE2379 /* ContactsViewController.swift */; };
+		03ECCEEE2370E08F00DE2379 /* SingleContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCEED2370E08F00DE2379 /* SingleContactViewController.swift */; };
+		03ECCEF12370E1D600DE2379 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCEEF2370E1D600DE2379 /* Contact+CoreDataClass.swift */; };
+		03ECCEF22370E1D600DE2379 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCEF02370E1D600DE2379 /* Contact+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,6 @@
 		03ECCEC32370DCC100DE2379 /* Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ECCEC62370DCC100DE2379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03ECCEC82370DCC100DE2379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03ECCECA2370DCC100DE2379 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03ECCECD2370DCC100DE2379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03ECCED02370DCC100DE2379 /* Core_Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data.xcdatamodel; sourceTree = "<group>"; };
 		03ECCED22370DCC400DE2379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +42,10 @@
 		03ECCEDC2370DCC400DE2379 /* Core DataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core DataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ECCEE02370DCC400DE2379 /* Core_DataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_DataUITests.swift; sourceTree = "<group>"; };
 		03ECCEE22370DCC400DE2379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03ECCEEB2370DD5A00DE2379 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		03ECCEED2370E08F00DE2379 /* SingleContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleContactViewController.swift; sourceTree = "<group>"; };
+		03ECCEEF2370E1D600DE2379 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		03ECCEF02370E1D600DE2379 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +87,17 @@
 		03ECCEC52370DCC100DE2379 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				03ECCEEF2370E1D600DE2379 /* Contact+CoreDataClass.swift */,
+				03ECCEF02370E1D600DE2379 /* Contact+CoreDataProperties.swift */,
 				03ECCEC62370DCC100DE2379 /* AppDelegate.swift */,
 				03ECCEC82370DCC100DE2379 /* SceneDelegate.swift */,
-				03ECCECA2370DCC100DE2379 /* ViewController.swift */,
 				03ECCECC2370DCC100DE2379 /* Main.storyboard */,
 				03ECCED22370DCC400DE2379 /* Assets.xcassets */,
 				03ECCED42370DCC400DE2379 /* LaunchScreen.storyboard */,
 				03ECCED72370DCC400DE2379 /* Info.plist */,
 				03ECCECF2370DCC100DE2379 /* Core_Data.xcdatamodeld */,
+				03ECCEEB2370DD5A00DE2379 /* ContactsViewController.swift */,
+				03ECCEED2370E08F00DE2379 /* SingleContactViewController.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -204,8 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				03ECCED12370DCC100DE2379 /* Core_Data.xcdatamodeld in Sources */,
-				03ECCECB2370DCC100DE2379 /* ViewController.swift in Sources */,
+				03ECCEEC2370DD5A00DE2379 /* ContactsViewController.swift in Sources */,
+				03ECCEF22370E1D600DE2379 /* Contact+CoreDataProperties.swift in Sources */,
+				03ECCEEE2370E08F00DE2379 /* SingleContactViewController.swift in Sources */,
 				03ECCEC72370DCC100DE2379 /* AppDelegate.swift in Sources */,
+				03ECCEF12370E1D600DE2379 /* Contact+CoreDataClass.swift in Sources */,
 				03ECCEC92370DCC100DE2379 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
